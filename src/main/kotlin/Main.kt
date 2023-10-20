@@ -105,14 +105,22 @@ fun main() {
     println("First Item : ${_shopping.first()}");
     println("Last Item : ${_shopping.last()}");
     println("Middle Item : ${_shopping[1]}")
-    println("Total Items in Shopping list : ${_shopping.count()}")
+    println("Total Items in Shopping list : ${_shopping.count()} - ${_shopping.size}")
 
     val _mutableShopping = mutableListOf<String>("Lamborghini", "House", "Rolex"); /// Mutable List
     _mutableShopping.add("New Item");
     println("\nChangeable Shopping List : $_mutableShopping");
     _mutableShopping.removeAt(_mutableShopping.count() - 1);
     println("Changeable Shopping List : $_mutableShopping");
+    println();
+    var counter = 0;
+//    while (counter < _shopping.count()) {
+    while (counter < _shopping.size) {
+        println("Value at $counter is ${_shopping[counter]}");
+        counter++;
+
+    }
 
 
-    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 39:05
+    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 41:35
 }
