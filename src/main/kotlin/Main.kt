@@ -95,5 +95,24 @@ fun main() {
     println("The Result Is : $result")
 
 
-    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 35:50
+    /// Lists
+
+
+    val _shopping = listOf<String>("Lamborghini", "House", "Rolex"); /// Immutable List
+
+    println("\nShopping List : $_shopping");
+
+    println("First Item : ${_shopping.first()}");
+    println("Last Item : ${_shopping.last()}");
+    println("Middle Item : ${_shopping[1]}")
+    println("Total Items in Shopping list : ${_shopping.count()}")
+
+    val _mutableShopping = mutableListOf<String>("Lamborghini", "House", "Rolex"); /// Mutable List
+    _mutableShopping.add("New Item");
+    println("\nChangeable Shopping List : $_mutableShopping");
+    _mutableShopping.removeAt(_mutableShopping.count() - 1);
+    println("Changeable Shopping List : $_mutableShopping");
+
+
+    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 39:05
 }
