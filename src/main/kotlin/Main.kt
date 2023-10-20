@@ -122,5 +122,23 @@ fun main() {
     }
 
 
-    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 41:35
+    /// ForEach Loop
+
+    println("\nForEach Loop")
+    _shopping.forEach { item ->
+        println(item);
+    }
+
+    /// For Loop
+
+    println("\nFor Loop")
+    for (item in _shopping) {
+        println(item)
+    }
+
+    for (i in 1..100){
+        println(i)
+    }
+
+    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 43:35
 }
