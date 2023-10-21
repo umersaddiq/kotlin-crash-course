@@ -140,5 +140,16 @@ fun main() {
         println(i)
     }
 
-    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 43:35
+
+    print("Enter the value of N : ")
+    val n = (readlnOrNull() ?: "0").toIntOrNull()
+    when (n) {
+        in 1..2 -> println("N is in range of 1 to 2")
+        in 3..10 -> println("N is in range of 3 to 10")
+        else -> {
+            println("N value is Greater than 10")
+        }
+    }
+
+    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 45:30
 }
