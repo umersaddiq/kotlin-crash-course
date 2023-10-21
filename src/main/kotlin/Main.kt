@@ -91,7 +91,8 @@ fun main() {
 //    val result = numberOne?.toInt() ?? 0 + numberTwo?.toInt()
 //    val result = numberOne!!.toInt() + numberTwo!!.toInt() /// Not a recommended way
 //    val result = (numberOne?.toInt() ?: 0) + (numberTwo?.toInt() ?: 0) /// Recommended way
-    val result = (numberOne?.toIntOrNull() ?: 0) + (numberTwo?.toIntOrNull() ?: 0) /// Recommended way I case you enter ABC in Input
+    val result = (numberOne?.toIntOrNull() ?: 0) + (numberTwo?.toIntOrNull()
+        ?: 0) /// Recommended way I case you enter ABC in Input
     println("The Result Is : $result")
 
 
@@ -136,7 +137,7 @@ fun main() {
         println(item)
     }
 
-    for (i in 1..100){
+    for (i in 1..100) {
         println(i)
     }
 
@@ -153,5 +154,32 @@ fun main() {
 
     /// Functions
 
-    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 45:30
+    printOneTo();
+    println("isEvenNumber : ${isEvenNumber(2)}");
+    println("isEvenNumber : ${isEvenNumberWithDefaultValue()}");
+    println("isEvenNumber : ${isEvenNumberWithDefaultValue(num = 12)}");
+    println("isOdd : ${32.isOdd()}")
+
+    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 54:55
+}
+
+/// Default Value to function parameter
+fun isEvenNumberWithDefaultValue(num: Int = 69): Boolean {
+    return num % 2 == 0;
+}
+
+fun isEvenNumber(num: Int): Boolean {
+    return num % 2 == 0;
+}
+
+fun printOneTo() {
+    for (i in 1..10) {
+        println(i);
+    }
+}
+
+/// Extension Functions
+
+fun Int.isOdd(): Boolean {
+    return this % 2 == 1;
 }
