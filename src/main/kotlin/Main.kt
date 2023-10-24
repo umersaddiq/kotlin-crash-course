@@ -159,8 +159,6 @@ fun main() {
     println("isEvenNumber : ${isEvenNumberWithDefaultValue()}");
     println("isEvenNumber : ${isEvenNumberWithDefaultValue(num = 12)}");
     println("isOdd : ${32.isOdd()}")
-
-    /// https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia 54:55
 }
 
 /// Default Value to function parameter
